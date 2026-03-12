@@ -1,0 +1,39 @@
+---
+import FeatureCard from "./FeatureCard.astro";
+const features = [
+  {
+    icon: "/images/icon-access-anywhere.svg",
+    title: "Access your files, anywhere",
+    text: "The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.",
+  },
+  {
+    icon: "/images/icon-access-anywhere.svg",
+    title: "Access your files, anywhere",
+    text: "The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.",
+  },
+  {
+    icon: "/images/icon-access-anywhere.svg",
+    title: "Access your files, anywhere",
+    text: "The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.",
+  },
+  {
+    icon: "/images/icon-access-anywhere.svg",
+    title: "Access your files, anywhere",
+    text: "The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.",
+  },
+];
+---
+
+<section class="mt-28 px-10 md:px-40">
+  <div class="grid md:grid-cols-2 gap-20">
+    {
+      features.map((feature) => (
+        <FeatureCard
+          icon={feature.icon}
+          title={feature.title}
+          text={feature.text}
+        />
+      ))
+    }
+  </div>
+</section>
