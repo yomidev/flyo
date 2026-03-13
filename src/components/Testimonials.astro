@@ -1,0 +1,30 @@
+---
+import TestimonialCard from "./TestimonialCard.astro";
+
+const testimonial = [
+  {
+    text: "Flyo has improved our team productivity by an order or magnitude.",
+    name: "Satish Patel",
+    role: "Founder & CEO, Huddle",
+    avatar: "/images/profile-1.jpg",
+  },
+  {
+    text: "Flyo has improved our team productivity by an order or magnitude.",
+    name: "Satish Patel",
+    role: "Founder & CEO, Huddle",
+    avatar: "/images/profile-2.jpg",
+  },
+  {
+    text: "Flyo has improved our team productivity by an order or magnitude.",
+    name: "Satish Patel",
+    role: "Founder & CEO, Huddle",
+    avatar: "/images/profile-3.jpg",
+  },
+];
+---
+
+<section class="mt-32 px-10 md:px-40">
+  <div class="grid md:grid-cols-3 gap-8">
+    {testimonial.map((t) => <TestimonialCard {...t} />)}
+  </div>
+</section>
